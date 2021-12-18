@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: #282828;
+  color: #fff;
 }
 
 .App-logo {
@@ -60,4 +62,573 @@
 {
   background-color: #e76f3d;
   color: #fff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#root
+{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+header
+{
+  background: #333333;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.action-movie
+{
+  padding: 8px 12%;
+}
+.category
+{
+  border-top: 2px solid #c58560;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.459);
+  background: #2d2d2d;
+  padding: 0 12%;
+}
+.lst-category
+{
+  height: 100%;
+}
+.logo-movie img
+{
+  width: 250px;
+  height: 70px;
+  object-fit:contain;  
+}
+.item-category
+{
+  padding: 10px 10px;
+}
+.item-category>a
+{
+  text-decoration: none;  
+  color: #dbdbdb;
+  position: relative;
+  text-transform:uppercase;
+  font-size: 0.93rem;
+  padding: initial;
+}
+.item-category a:hover
+{
+  color: #c58560;
+}
+
+.search
+{
+  height: 35px;
+  padding: 5px 17px;
+  background: #fff;
+  border-radius: 100px;
+  font-size: 0.93rem;
+  margin-left: 30px;
+}
+.search input{
+  border: 0;
+  outline: none;
+  height: 100%;
+  max-width: 250px;
+  width: 250px;
+}
+.btn-search
+{
+  height: 100%;
+  border: 0;
+  outline: none;
+  background: #fff;
+  padding: 0 5px;
+  font-size: 1.05rem;
+  color: #757575;
+}
+.lst-btn-user button{
+  border: 0;
+  outline: none;
+  margin: 0 2.5px;
+  padding: 7px 10px;
+  font-size: 0.9rem;
+  border-radius:4px;
+  color: #fff;
+}
+.btn-register
+{
+  background: #e76f3d;
+}
+.btn-log-in
+{
+  background: #b2b2b2;
+}
+.cartegory-lst
+{
+  position: absolute;
+  width: 770px;
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  padding-left: 10px;
+  top: 44px;
+  background: #2d2d2d;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+.item-category:nth-child(2),
+.item-category:nth-child(3)
+{
+  position: relative;
+}
+.item-category:nth-child(2):hover .cartegory-lst,
+.item-category:nth-child(3):hover .cartegory-lst{
+  opacity: 1;
+  visibility: visible;
+}
+.cartegory-child
+{
+  width: auto;
+  text-align: left;
+}
+
+.cartegory-child p
+{
+  padding: 5px 0 10px 5px;
+}
+.cartegory-child p a
+{
+   text-decoration: none;
+   font-size: 0.906rem;
+    color: #fff;
+    opacity: 1 !important;
+}
+.lst-hot-movie
+{
+  padding: 10px 12% !important;
+}
+.hot-items-film
+{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.hot-items-film .status-film,
+.item-info-threater .status-film
+{
+  margin: 0;
+  position: absolute;
+  color: #fff;
+  font-size: 0.71rem;
+  top: 5px;
+  left: 5px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: #c58560;
+  z-index: 100;
+}
+.fa-play-circle
+{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translateX(-60%);
+  transform: translateY(-60%);
+  color: #522e759c;
+  font-size: 3rem;
+  transform: scale(1.5);
+  opacity: 0;
+  transition: all .4s linear;
+
+}
+.hot-items-film img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hot-items-film:hover img
+{
+  transform: scale(1.2);
+  transition: all .5s linear;
+}
+.hot-items-film:hover i,
+.item-info-threater:hover i
+{
+  opacity: 1;
+  transform: scale(1);
+}
+.movie-div
+{
+  position: absolute;
+  top:88%;
+  font-size: 0.89rem;
+  left: 0;
+  width:100%;
+  background: rgba(0, 0, 0, 0.411);
+  height: 12%;
+  color: #fff;
+}
+
+.slick-dots
+{
+  display: none !important;
+}
+.slick-slider
+{
+  padding: 0 !important;
+}
+.slick-slide > div {
+  margin-right: 15px !important;
+  height: 252px;
+}
+.slick-list {
+  margin-right: -10px !important;
+}
+.btn-tab-movie
+{
+  grid-template-columns: 1fr 1fr 1fr
+}
+.btn-tab-movie button
+{
+  background: url('https://gophim.club/media/img/top-bar.png');
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 9px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+.info-content-item
+{
+  overflow: hidden;
+}
+.info-content-item a
+{
+   text-decoration: none;
+   font-size: 0.8rem;
+}
+.info-content-item a img
+{
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  background-position: center;
+  margin-right: 8px;
+}
+.tab-content
+{
+  border-bottom:1px dashed #555;
+  padding: 8px 10px;
+}
+.title-vn
+{
+  color: #fff;
+}
+.title-en 
+,.eps
+{
+  color:#ccc;
+  font-size: .75rem !important;
+}
+.info-movie-title
+{
+  text-align: left;
+}
+.info-movie-title p
+{
+  margin: 0;
+}
+.ui-tab-panel
+{
+  background: url('https://gophim.club/media/img/item_bgg.gif');  
+}
+#root a
+{
+  text-decoration: none;
+}
+.item-image-collect img
+{
+   width: 100%;
+   object-fit: cover;
+   height: 100%;
+}
+.title-threaters
+{
+  border-bottom: 1px solid #b2b2b2;
+  margin-bottom: 6px;
+}
+.title-threaters p
+{
+  background:#c58560;
+  margin-bottom: 0;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px 6px 0 0;
+  font-size: 1.05rem;
+}
+.title-threaters a
+{
+  color: #fff;
+  font-size: 0.98rem;
+}
+.title-threaters a:hover{
+  color:#a7c5de;
+}
+.item-info-threater
+{
+  height: auto;
+  position: relative;
+}
+.item-info-threater img
+{
+  width: 100%;
+  height:220px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.item-info-threater p
+{
+  margin-bottom: 0;
+}
+.item-info-threater .status-film
+{
+  left: 10px !important;
+}
+.threater-name
+{
+  background: url('https://gophim.club/media/img/item_bgg.gif');
+  padding-left: 8px;
+  text-align: left;
+  padding-bottom: 8px;
+  border-radius: 0 0 10px 10px;
+}
+.threater-name p:first-child
+{
+  color: #c58560;
+}
+.threater-name p:nth-child(2)
+{
+  color: #fff;
+  font-size: 0.8rem;
+}
+.movie-time
+{
+  color: rgba(204, 204, 204, 0.678);
+  font-size: 0.8rem;
+}
+.fa-galactic-senate
+{
+  color: #fde275;
+  font-size: 1.35rem;
+}
+.title-upcome-movie
+{
+  font-size: 1.2rem;
+  color: #db9c78;
+  padding: 5px 0;
+}
+#root p 
+{
+  margin-bottom: 0;
+}
+.upcoming-movie
+{
+  margin-bottom: 20px;
+  background: url('https://gophim.club/media/img/item_bgg.gif');
+}
+.info-thumb,
+.label
+{
+  text-transform: capitalize;
+}
+#item-thumb-1
+{
+  height: 160px;
+}
+#item-thumb-1 img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.upcoming-movie 
+{
+  border-bottom: 2px solid #c58560;
+}
+.item-thumb 
+{
+  position: relative;
+}
+.label
+{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: #757575;
+  color: #fff;
+  font-size: 0.81rem;
+}
+.info-thumb
+{
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  text-align: left;
+}
+.thumb-name-vn
+{
+  color: #fff;
+}
+#item-thumb-1 .thumb-name-vn
+{
+  text-transform: uppercase;
+}
+#item-thumb-1 .thumb-name-en
+{
+  color: #fff;
+  font-size: 0.8rem;
+}
+.rank-movie
+{
+  font-size: 0.78rem;
+  color:#f0aa17;
+}
+#item-thumb-1 .view
+{
+  position: absolute;
+  right: 8px;
+  bottom: 5px;
+  color: #fff;
+  font-size: 0.82rem;
+}
+#item-thumb-1 a:hover .thumb-name-vn
+{
+  color: rgb(255, 255, 52);
+}
+.film-item-ver img
+{
+  width: 25%; 
+  height: 80px;
+  object-fit: cover;
+}
+.info-esp-movie
+{
+  text-align: left;
+}
+.film-item-ver .view{
+  font-size: 0.8rem;
+  color: #ccc;
+}
+.film-item-ver .thumb-name-en
+{
+  color: #ccc;
+  font-size: 0.79rem;
+}
+.film-item-ver .rank-movie
+{
+  font-size: 0.70rem;
+}
+.film-item-ver .thumb-name-vn
+{
+  font-size: .91rem;
+  text-transform: capitalize;
+}
+.fa-tags
+{
+  transform: rotate(90deg);
+  color: #fff;
+}
+.famous-key
+{
+  text-align: left;
+  font-size: .89rem;
+}
+.famous-key a{
+  color: #fff;
+}
+.famous-key a:hover{
+  color: #c58560;
+}
+.title-upcome-movie {
+  padding-left: 8px;
+}
+.img-banner img 
+{
+  width: 100%;
+  object-fit: cover;
+  height: 430px;
+  padding-bottom: 20px;
+}
+footer
+{
+  margin-top: 15px;
+  padding: 15px 12%;
+  background: url('https://gophim.club/media/img/micro_carbonz.png');
+}
+.img-logo-info
+{
+  font-size: 0.88rem;
+}
+.img-logo-info 
+{
+  text-align: left;
+}
+.img-logo-info img
+{
+  width: 230px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.title-content
+{
+  line-height: 60px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #c58560;
+  font-size: 1.13rem;
+  font-weight: 500;
+}
+.new-film 
+{
+  text-align: left;
+}
+.new-film a
+{
+  color: rgba(204, 204, 204, 0.733);
+  font-size: 0.88rem;
+}
+.new-film a p
+{
+  margin-bottom: 6px !important;
+}
+.new-film a:hover
+{
+  color: #fff;
+}
+
+.contact
+{
+  padding-top: 18px;
+  color: rgba(204, 204, 204, 0.733);
+}
+.contact:hover .email
+{
+  color: #fff;
+}
+.contact:hover .fa-phone-alt
+{
+  color: #fde275;
+  transform: rotateY(0);
+}
+.email 
+{
+  font-size: 0.88rem;
+}
+.fa-phone-alt
+{
+  transform:rotateY(3.142rad);
+  font-size: 1.5rem;
+  transition: all 1s linear;
 }
